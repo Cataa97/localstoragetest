@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Formulario</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body onload="mostrarDatos()">
+    <h2>Formulario</h2>
+    <form>
+      <label for="usuario">Usuario:</label>
+      <input type="text" id="usuario" required /><br /><br />
+
+      <label for="correo">Correo electrónico:</label>
+      <input type="email" id="correo" required /><br /><br />
+
+      <input type="button" value="Guardar" onclick="guardarDatos()" />
+    </form>
+
+    <h2>Datos guardados:</h2>
+    <div id="datos"></div>
+    <script src="scripts.js"></script>
+  </body>
+</html>
